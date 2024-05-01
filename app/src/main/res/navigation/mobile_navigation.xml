@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.example.contactsapp.ui.home.HomeFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/activity_list_profil" />
+
+    <fragment
+        android:id="@+id/navigation_add_contact"
+        android:name="com.example.contactsapp.ui.addContact.AddContactFragment"
+        android:label="@string/title_add_contact"
+        tools:layout="@layout/activity_add_profil" />
+
+    <fragment
+        android:id="@+id/navigation_favs"
+        android:name="com.example.contactsapp.ui.favoriteContacts.FavoriteContactsFragment"
+        android:label="@string/title_notifications"
+        tools:layout="@layout/fragment_favorites" />
+</navigation>
